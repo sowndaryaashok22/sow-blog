@@ -1,0 +1,40 @@
+{
+  "blogs": [
+    {
+      "title": "blog1",
+      "body": "If you always use module.exports,",
+      "author": "sow",
+      "id": 1
+    },
+    {
+      "title": "blog2",
+      "body": "If you always use module.exports, youll never be wrong, but you can use exports if,",
+      "author": "ash",
+      "id": 2
+    },
+    {
+      "title": "blog4",
+      "body": "If you always use module.exports, youll never be wrong, but you can use exports if,",
+      "author": "sow",
+      "id": 4
+    },
+    {
+      "title": "hhf",
+      "body": "gfdgd",
+      "author": "",
+      "id": 5
+    },
+    {
+      "title": "766g",
+      "body": "hfyh",
+      "author": "lava",
+      "id": 6
+    },
+    {
+      "title": "jfhf",
+      "body": "gtet",
+      "author": "",
+      "id": 8
+    }
+  ]
+}

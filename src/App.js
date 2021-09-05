@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import NavBar from './Components/NavBar';
 import './App.css';
+import Home from './Components/Home';
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Create from './Components/Create';
+import BlogDetails from './Components/BlogDetails';
+import { Link } from 'react-router-dom'
 
 function App() {
+    const title = ' welcome to sow blog'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar />
+      <div className = 'content'>
+        <Switch>
+          <Route exact path = '/'>
+          <Home />
+         </Route>
+         <Route path = '/create'>
+          <Create />
+         </Route>
+         <Route path = '/blogs/:id'>
+          <BlogDetails />
+         </Route>
+         <Route path = '*'>
+          <div> Page not found </div>
+          <Link to = '/'> Go back </Link>
+         </Route>
+        </Switch>  
+      </div>
+      </div>
+    </Router>
   );
 }
 
